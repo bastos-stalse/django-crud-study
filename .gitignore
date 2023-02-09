@@ -1,0 +1,10 @@
+# python
+/venv_django_first
+json_example.json
+json_example_prd.json
+*.pyc
+
+# Node
+/node_modules
+npm-debug.log
+yarn-error.log

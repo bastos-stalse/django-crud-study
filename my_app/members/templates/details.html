@@ -1,0 +1,16 @@
+{% extends "master.html"%}
+
+{% block title %}
+    Members Details - Django
+{% endblock %}
+
+{% block content %}
+    <div class="container-fluid d-flex flex-column justify-content-center align-items-center" style="height: 95vh;">
+        <h1>{{ mymember.firstName }} {{ mymember.lastName }}</h1>
+
+        <p>Phone: {{ mymember.phone }}</p>
+        <p>Member since: {{ mymember.joined_date }}</p>
+
+        <p>Back to <a href="/members">Members</a></p>
+    </div>
+{% endblock %}

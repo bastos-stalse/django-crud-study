@@ -1,0 +1,33 @@
+{% extends "master.html" %}
+
+{% block title %}
+  Home - Django
+{% endblock %}
+
+
+{% block content %}
+    <div class="container-fluid d-flex flex-column justify-content-center align-items-center" style="height: 95vh;">
+        <h1>My first App</h1>
+
+        <h3>Welcome</h3>
+
+        <h3>Sign up member</h3>
+        <form action="{% url 'salvar' %}">
+          <div class="form-group">
+            <label for="name">Nome</label>
+            <input type="name" class="form-control" id="name" placeholder="Name">
+          </div>
+          <div class="form-group">
+            <label for="lastName">Sobrenome</label>
+            <input type="name" class="form-control" id="lastName" placeholder="Lastname">
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="phone" class="form-control" id="phone" placeholder="Phone">
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        
+        <p>Check out all our <a href="members/">members</a></p>
+    </div>
+{% endblock %}
